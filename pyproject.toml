@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wlm-knowledge-engine"
+version = "0.1.0"
+description = "Convert raw text into dimensional structure and reasoning-ready knowledge graphs."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+
+authors = [
+    { name = "Wujie Gu" }
+]
+
+keywords = [
+    "WLM",
+    "knowledge-graph",
+    "structural-reasoning",
+    "dimensional-structure",
+    "causal-reasoning",
+    "nlp",
+    "world-models"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/YOUR_USERNAME/wlm-knowledge-engine"
+Documentation = "https://github.com/YOUR_USERNAME/wlm-knowledge-engine/tree/main/docs"
+Source = "https://github.com/YOUR_USERNAME/wlm-knowledge-engine"
+Issues = "https://github.com/YOUR_USERNAME/wlm-knowledge-engine/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+wlm-knowledge = "wlm_knowledge_engine.cli:main"
